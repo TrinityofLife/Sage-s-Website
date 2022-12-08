@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" href="photos/trinity_knot.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no" ,>
+  <title>Contact Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <header>
+    <span><a href="index.html">
+        <img border="0" alt="Trinity" src="photos/trinity_knot.png" width="50" height="50">
+      </a></span>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+      <div class="container">
+        <h1>Contact Me</h1>
+        <form action="https://formsubmit.co/Sage.T.H.S@outlook.com" method="POST" />
+
+        <label for="fname">First Name</label>
+        <input required type="text" id="fname" name="firstname" placeholder="Your name..">
+        <br>
+
+        <label for="lname">Last Name</label>
+        <input required type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <br>
+
+        <label for="email">Email</label>
+        <input required type="text" id="email" pattern=".+@hotmail\.com" name="e-mail" placeholder="...@hotmail.com">
+        <br>
+        <label for="subject">Subject</label>
+        <br>
+        <textarea id="subject" name="subject" placeholder="Write something.." rows="3" cols="50"> </textarea>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+    <script src="form.js"></script>
+    </div>
+  </main>
+
+  <footer>
+    Copyright Sage Smith 2022
+  </footer>
+</body>
+
+</html>
