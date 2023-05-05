@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <link rel="icon" href="photos/trinity_knot.png">
@@ -29,29 +29,26 @@
   </header>
 
   <main>
-    <form>
-      <div class="container">
-        <h1>Contact Me</h1>
-        <form action="https://formsubmit.co/Sage.T.H.S@outlook.com" method="POST" />
-
-        <label for="fname">First Name</label>
-        <input required type="text" id="fname" name="firstname" placeholder="Your name..">
-        <br>
-
-        <label for="lname">Last Name</label>
-        <input required type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <br>
-
-        <label for="email">Email</label>
-        <input required type="text" id="email" pattern=".+@hotmail\.com" name="e-mail" placeholder="...@hotmail.com">
-        <br>
-        <label for="subject">Subject</label>
-        <br>
-        <textarea id="subject" name="subject" placeholder="Write something.." rows="3" cols="50"> </textarea>
-        <br>
-        <button type="submit" value="Submit">Submit</button>
-    </form>
-    <script src="form.js"></script>
+    <div class="contact_container">
+      <h1>Contact Me</h1>
+      <form id="FormSubmit" form target="_blank" action="https://formsubmit.co/Sage.T.H.S@outlook.com" method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col">
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        <script src="prompt.js"></script>
+        <!--Need a way to have submit form and have prompt both work.-->
+      </form>
     </div>
   </main>
 
