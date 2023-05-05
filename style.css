@@ -19,10 +19,16 @@ header{
   text-align:center;
   background-color:#8a8a8a;
   padding: .5em;
-
+  border-radius: 25px;
+  
 
 }
 
+img { 
+  border: 0; 
+  width: 80px; 
+  height: 80px;
+    }
 
 body{
   color:var(--color-fg);
@@ -55,7 +61,7 @@ text-align: center;
 
 .image_main{
   Text-align: center;
-  border-radius: 500px;
+  border-radius: 35px;
   margin-left: auto;
   margin-right: auto;
   height: 300px;
@@ -74,6 +80,9 @@ text-align: center;
 footer{
   bottom:2%;
   position:fixed;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 .paragraph span{
@@ -116,6 +125,16 @@ summary:hover {
   border: 1px solid black;
   border-radius: 10px;
   font-size: 150%;
+}
+.contact_container{
+  background-color:#8a8a8a;
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 15px;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 2;
+  
 }
 
 

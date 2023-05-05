@@ -1,14 +1,18 @@
-const button = document.querySelector("button");
+const loginForm = document.querySelector("form")
 
-const onClick = () => {
-  const yourName = prompt("What is your name?");
+function confirmLogin(event) {
+  console.log("confirmlogin")
+  event.preventDefault()
 
-  // console.log(yourName)
 
-  button.innerHTML = yourName;
+  let text = "Does everything look correct?";
 
+  if (confirm(text) == true) {
+    document.getElementById("FormSubmit").submit(); window.location.href = "index.html";
+  }
+  else {
+    window.location.href = "contact.html";
+  }
 }
 
-
-button.addEventListener('click', onClick);
-
+loginForm.addEventListener("submit", confirmLogin);
